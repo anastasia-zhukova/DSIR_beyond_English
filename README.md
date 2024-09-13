@@ -1,6 +1,15 @@
 # DSIR German Literature
-
 This repository contains two Jupyter notebooks for the project "Automated Collection of Multilingual Domain-Related Text Data for Continual Pretraining":
+
+## Notebooks
+
+1. **`dsir.ipynb`**
+   - This notebook collects *n* domain-related text data from large raw datasets.
+
+2. **`continual_pretraining.ipynb`**
+   - This notebook performs continual pretraining on models with the collected text data.
+
+     
 ## Prerequisites
 
 Before running the script, ensure you have the following installed:
@@ -15,13 +24,6 @@ You can install the required packages using pip:
 pip install nltk data_selection
 ```
 
-## Notebooks
-
-1. **`dsir.ipynb`**
-   - This notebook collects *n* domain-related text data from large raw datasets.
-
-2. **`continual_pretraining.ipynb`**
-   - This notebook performs continual pretraining on models with the collected text data.
 
 
 ## How to use DSIR
@@ -59,7 +61,7 @@ with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
 
 ## Continual Pretraining
 
-- The notebook uses a collection of German texts as input for continual. 
+- The notebook uses a collection of German texts as input for continual. The data collection can be found under this OneDrive folder: https://1drv.ms/f/c/376dc8dd0db77e08/Ek_edEfOgrNHu2MHtKZdpUMBpLEjn9mlqSwp5j1DR2Oe6g?e=lChvNx
 - The tokenizer, **`BertTokenizer`**, is used to tokenize the dataset, and special tokens are handled automatically.
 - The **`mask_tokens`** function applies the MLM objective by randomly masking 15% of the input tokens.
 - **`TextDataset`** turns the input text into encodings and lables.

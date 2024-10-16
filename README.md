@@ -1,3 +1,8 @@
+# Data Selection for Language Models via Importance Resampling (DSIR) beyond English
+
+The repository revisits [the DSIR paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b9aa8f418bde2840d5f4ab7a02f663b-Abstract-Conference.html) (see the [original code](https://github.com/p-lambda/dsir)) applied to collect text data given target data from the large multilingual text collection. The example below evaluates the methodology applied to German Literature domain. 
+
+
 # DSIR German Literature
 This repository contains two Jupyter notebooks for the project "Automated Collection of Multilingual Domain-Related Text Data for Continual Pretraining":
 
